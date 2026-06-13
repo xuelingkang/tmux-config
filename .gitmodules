@@ -1,0 +1,3 @@
+[submodule "wsl-bin"]
+	path = wsl-bin
+	url = https://github.com/xuelingkang/wsl-bin.git
