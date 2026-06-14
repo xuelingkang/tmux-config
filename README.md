@@ -11,7 +11,10 @@ git clone --recursive https://github.com/xuelingkang/tmux-config.git ~/.tmux-con
 # 2. Symlink config
 ln -sf ~/.tmux-config/tmux.conf ~/.tmux.conf
 
-# 3. Install TPM plugins
+# 3. macOS: build macism (input source switcher)
+make -C ~/.tmux-config
+
+# 4. Install TPM plugins
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ~/.tmux/plugins/tpm/bin/install_plugins
 ```
@@ -20,7 +23,7 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 ## Requirements
 
-- tmux 3.3a+ (for `%if` / `%endif` preprocessor and `#{host_os}` format)
+- tmux 3.3a+
 
 ## Features
 
@@ -32,4 +35,5 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 ## Notes
 
-The IME switching section is guarded by `%if #{==:#{host_os},Darwin}` — non-macOS systems skip it silently.
+The IME switching section is guarded by `if-shell` with `uname -s` (macOS) and
+`uname -a` (WSL) — non-matching platforms skip them silently.
