@@ -4,3 +4,6 @@
 [submodule "macism"]
 	path = macism
 	url = https://github.com/laishulu/macism.git
+[submodule "mac-bin"]
+	path = mac-bin
+	url = git@github.com:xuelingkang/mac-bin.git
