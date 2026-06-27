@@ -11,10 +11,7 @@ git clone --recursive https://github.com/xuelingkang/tmux-config.git ~/.tmux-con
 # 2. Symlink config
 ln -sf ~/.tmux-config/tmux.conf ~/.tmux.conf
 
-# 3. macOS: build macism (input source switcher)
-make -C ~/.tmux-config
-
-# 4. Install TPM plugins
+# 3. Install TPM plugins
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ~/.tmux/plugins/tpm/bin/install_plugins
 ```
@@ -28,7 +25,7 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ## Features
 
 - Mouse support
-- macOS IME auto-switch: automatically switches to ABC (English) input method when entering a pane or pressing prefix (`C-b`)
+- macOS IME auto-switch: automatically switches to English mode when entering a pane or pressing prefix (`C-b`)
 - Alt + hjkl pane navigation
 - vi-style copy mode
 - [TPM](https://github.com/tmux-plugins/tpm) plugin manager with sensible, copycat, yank, open, and nord theme
