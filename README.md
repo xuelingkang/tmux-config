@@ -25,7 +25,6 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ## Features
 
 - Mouse support
-- macOS IME auto-switch: automatically switches to English mode when entering a pane or pressing prefix (`C-b`)
 - Alt + hjkl pane navigation
 - vi-style copy mode
 - [TPM](https://github.com/tmux-plugins/tpm) plugin manager with sensible, copycat, yank, open, and nord theme
